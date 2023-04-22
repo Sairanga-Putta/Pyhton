@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("C:/Users/saira/OneDrive/Desktop")
+data = pd.read_csv("/content/Play Tennis")
 features = [feat for feat in data]
 features.remove("Play Tennis")
 print('DATASET : Play Tennis')
