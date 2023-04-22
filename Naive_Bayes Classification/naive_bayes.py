@@ -40,7 +40,9 @@ def classify(d):
   for i in d:
     vy=vy*(s[i][d[i]]/yes)
     vn=vn*(n[i][d[i]]/no)
-  if(vy>vn):
+  vyes=vy/(vy+vn)
+  vno=vn/(vn+vy)
+  if(vyes>vno):
     return 'Yes'
   else:
     return 'No'
